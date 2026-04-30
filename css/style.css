@@ -14,6 +14,8 @@ body {
     background-color: #FFCF23;
 }
 
+/* Estilos para o cabeçalho e navegação */
+
 nav {
     min-height: 4vh;
     align-content: center;
@@ -28,13 +30,12 @@ nav ul {
 
 nav ul li {
     margin-right: 1.5vw;
-    font-size: 0.4em;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 0.6em;
     font-weight: bold;
     text-shadow: 
         -1px -1px 2px navy,
@@ -43,6 +44,17 @@ nav ul li a {
         1px  1px 2px navy;
 }
 
+@media (min-width: 768px) {
+    nav {
+        min-height: 7vh;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
+/* Estilos para o banner */
 #divBanner1 {
     background-image: url('/imagens/banners/Simpsons_Banner1.jpg');
     background-size: cover;
@@ -64,6 +76,18 @@ nav ul li a {
     margin-left: 2vw;
 }
 
+@media (min-width: 768px) {
+    #divBanner1 h1 {
+        font-size: 3em;
+        text-shadow: 
+            -2px -2px 1px navy,
+            2px -2px 1px navy,
+            -2px  2px 1px navy,
+            2px  2px 1px navy;
+    }
+}
+
+/* Estilo para os subtítulos */
 h2 {
     font-size: 1.5em;
     color: white;
@@ -76,6 +100,7 @@ h2 {
     margin-left: 2vw;
 }
 
+/* Estilos para a seção de introdução */
 #sectionIntroducao p {
     margin-left: 4vw;
     margin-top: 1vh;
@@ -95,7 +120,7 @@ h2 {
     margin-right: 4vw;
 }
 
-#divCards .divCard {
+.divCard {
     background-color: white;
     width: 165px;
     height: 380px;
@@ -104,7 +129,7 @@ h2 {
     overflow: hidden;
 }
 
-.divCard .divCardImage {
+.divCardImage {
     background-image: url('https://res.cloudinary.com/dglqojivj/image/upload/v1682559693/simpsons/250px-Cletus_Spuckler_rvpr9g.png');
     background-size: cover;
     background-position: center;
@@ -115,15 +140,31 @@ h2 {
     box-shadow: 3px 3px 7px 1px black;
 }
 
-.divCard .h3Card {
+.h3Card {
     font-size: 1.2em;
     text-align: center;
 }
 
-.divCard .pCard {
+.pCard {
     font-size: 0.6em;
     text-align: left;
     padding: 15px 15px 15px 15px;
+}
+
+@media (min-width: 1024px) {
+    .divCard {
+        width: 260px;
+        height: 380px;
+    }
+
+    .divCardImage {
+        width: 140px;
+        height: 200px;
+    }
+
+    .pCard {
+        font-size: 0.7em;
+    }
 }
 
 #divPaginas {
@@ -165,11 +206,27 @@ h2 {
     margin: auto;
 }
 
+@media (min-width: 1024px) {
+    #divPaginas {
+        width: 60vw;
+    }
+}
+
+/* Estilos para as seção da história da família */
 #sectionHistoriaDaFamilia p {
     margin-left: 20px;
     margin-top: 10px;
 }
 
+@media (min-width: 1024px) {
+    #sectionHistoriaDaFamilia p {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+
+/* Estilos para a seção da cidade de Springfield */
 #sectionCidadeSpringfield {
     margin-top: 20px;
 }
@@ -193,6 +250,28 @@ h2 {
     box-shadow: 2px 2px 5px 0px black;
 }
 
+@media (min-width: 1024px) {
+    #sectionCidadeSpringfield {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5vh;
+    }
+    #divCidadeSpringfield {
+        min-width: 50vw;
+    }
+    #divCidadeSpringfield p {
+        margin-left: 60px;
+        margin-right: 10px;
+    }
+    #divBanner2 {
+        height: 30vh;
+        min-width: 35vw;
+        margin-right: 10px;
+        align-self: center;
+    }
+}
+
+/* Estilos para a seção de curiosidades */
 #sectionCuriosidades {
     background-color: white;
     margin-left: 20px;
@@ -209,6 +288,19 @@ h2 {
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+    #sectionCuriosidades {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    #sectionCuriosidades p {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 footer {
