@@ -127,6 +127,12 @@ h2 {
     border: 2px solid navy;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    text-align: center;
+}
+
+.divCard:hover {
+    border-color: rgb(0, 0, 255);
+    border-radius: 10px;
 }
 
 .divCardImage {
@@ -152,10 +158,26 @@ h2 {
     padding: 15px 15px 15px 15px;
 }
 
+.btnCardHistoria {
+    margin-top: 3vh;
+    background-color: #6E52D6;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    border: none;
+    padding: 0.5vh;
+    border-radius: 2px 10px 2px 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.btnCardHistoria:hover {
+    border: 1px solid #FFCF23;
+}
+
 @media (min-width: 768px) {
     .divCard {
         width: 25vw;
-        height: 65vh;
+        height: 70vh;
     }
 
     .divCardImage {
@@ -167,7 +189,7 @@ h2 {
 @media (min-width: 1024px) {
     .divCard {
         width: 25vw;
-        height: 50vh;
+        height: 65vh;
     }
 
     .pCard {
@@ -178,7 +200,7 @@ h2 {
 @media (min-width: 1300px) {
     .divCard {
         width: 25vw;
-        height: 60vh;
+        height: 65vh;
     }
 
     .divCardImage {
@@ -194,7 +216,7 @@ h2 {
 @media (min-width: 1525px) {
     .divCard {
         width: 20vw;
-        height: 60vh;
+        height: 70vh;
     }
 
     .divCardImage {
